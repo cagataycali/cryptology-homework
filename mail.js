@@ -61,8 +61,6 @@ const askUser = users => {
 }
 
 const run = username => {
-  console.log('Welcome ' + colors.green.bold(username))
-
   const questions = [
     {
       type: 'list',
@@ -108,6 +106,10 @@ const run = username => {
         run(username)
       } else if (option === 'send') {
         const users = await getOtherUsers(username)
+        if (users.length === 0) {
+          console.log('There\'s no other users'.red)
+          run(username)
+        }
         const mail = await askUser(users)
         mailDB.insert({ from: username, to: mail.username, message: mail.message, date: new Date() }, (err, doc) => {
           if (err) {
