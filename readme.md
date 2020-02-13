@@ -1,0 +1,1 @@
+Repl.it'de yayınla ki hoca direkt görebilsin ve çalıştırabilsin.
