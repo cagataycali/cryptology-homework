@@ -118,8 +118,6 @@ const run = username => {
           console.log('Mail send successfully.'.green.bold.underlined)
           run(username)
         })
-      } else {
-        process.exit(1)
       }
     })
 }
