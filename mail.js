@@ -106,9 +106,9 @@ const run = username => {
         run(username)
       } else if (option === 'send') {
         const users = await getOtherUsers(username)
-        if (users.length === 0) {
+        if (!users || users.length === 0) {
           console.log('There\'s no other users'.red)
-          run(username)
+          return run(username)
         }
         const mail = await askUser(users)
         mailDB.insert({ from: username, to: mail.username, message: mail.message, date: new Date() }, (err, doc) => {
@@ -116,7 +116,7 @@ const run = username => {
             console.error(err)
           }
           console.log('Mail send successfully.'.green.bold.underlined)
-          run(username)
+          return run(username)
         })
       }
     })
