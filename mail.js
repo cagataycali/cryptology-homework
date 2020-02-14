@@ -1,12 +1,25 @@
+/* eslint-disable node/no-deprecated-api */
 /* eslint-disable standard/no-callback-literal */
 const colors = require('colors')
 const inquirer = require('inquirer')
 const Datastore = require('nedb')
 const moment = require('moment')
+const crypto = require('crypto')
+const key = 'cibilibilop'
 const [userDB, mailDB] = [
   new Datastore({ filename: './user', autoload: true }),
   new Datastore({ filename: './db', autoload: true })
 ]
+const CURVE_ALGORTHM = 'wap-wsg-idm-ecid-wtls11'
+const AES256 = 'aes256'
+
+const encryptMessage = (user, to, message) => {
+  return { message }
+}
+
+const decryptMessage = (message, key) => {
+  return message
+}
 
 const showMailBox = username => {
   return new Promise((resolve, reject) => {
@@ -29,6 +42,17 @@ const getOtherUsers = username => {
       // Don't send yourself.
       users = users.filter(_user => _user.username !== username)
       resolve(users)
+    })
+  })
+}
+
+const getMe = username => {
+  return new Promise((resolve, reject) => {
+    userDB.find({ username }, (err, users) => {
+      if (err) {
+        reject(err)
+      }
+      resolve(users[0])
     })
   })
 }
@@ -94,10 +118,15 @@ const run = username => {
           console.log('There\'s no mail for now.'.bold.green)
         } else {
           mails = mails.map(mail => {
+            const { message, key } = mail.message
+
+            const _message = decryptMessage(message, key)
+            // console.log(mail.message, _message, '...')
+
             return {
               to: mail.to,
               from: mail.from || 'self',
-              message: mail.message,
+              message,
               date: moment(mail.date).fromNow() || moment(new Date()).fromNow()
             }
           })
@@ -106,12 +135,18 @@ const run = username => {
         run(username)
       } else if (option === 'send') {
         const users = await getOtherUsers(username)
+        const me = await getMe(username)
         if (!users || users.length === 0) {
           console.log('There\'s no other users'.red)
           return run(username)
         }
         const mail = await askUser(users)
-        mailDB.insert({ from: username, to: mail.username, message: mail.message, date: new Date() }, (err, doc) => {
+        // console.log('message', mail.message)
+
+        const _message = encryptMessage(me, users.find(user => user.username === mail.username), mail.message, true)
+        // console.log(_message, 'encripted')
+
+        mailDB.insert({ from: username, to: mail.username, message: _message, date: new Date() }, (err, doc) => {
           if (err) {
             console.error(err)
           }

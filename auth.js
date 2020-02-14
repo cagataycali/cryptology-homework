@@ -2,7 +2,8 @@
 const colors = require('colors')
 const inquirer = require('inquirer')
 const Datastore = require('nedb')
-const { pbkdf2Sync, randomBytes } = require('crypto')
+const { pbkdf2Sync, randomBytes, createECDH } = require('crypto')
+const CURVE_ALGORTHM = 'wap-wsg-idm-ecid-wtls11'
 const [userDB, mailDB] = [
   new Datastore({ filename: './user', autoload: true }),
   new Datastore({ filename: './db', autoload: true })
@@ -62,7 +63,13 @@ module.exports = callback => {
       const hash = (pbkdf2Sync(password, salt, 100000, 512, 'sha512')).toString('hex')
       // If the user does not exists.
       if (users.length === 0) {
-        userDB.insert({ username, password: hash, salt }, (err, doc) => {
+        // Elliptic curve diffie-hellman.
+        const ecdh = createECDH(CURVE_ALGORTHM)
+        const key = ecdh.generateKeys()
+        const public = (ecdh.getPublicKey()).toString('hex')
+        const private = (ecdh.getPrivateKey()).toString('hex')
+
+        userDB.insert({ username, password: hash, salt, key: key.toString('hex'), public, private, created: new Date() }, (err, doc) => {
           if (err) {
             console.error(err)
           }
