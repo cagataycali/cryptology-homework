@@ -23,3 +23,16 @@ npm install
 ```bash
 npm start
 ```
+
+
+> Test users:
+
+* username : password
+* cagatay : s3cur3P@ss
+* test : s3cur3P@ss2
+
+
+**If you don't have a user, when first login attempt you will be registered.**
+
+
+![Usage gif](./gif.gif "Usage gif")

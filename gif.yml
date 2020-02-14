@@ -1,0 +1,296 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: /bin/zsh
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: /Users/cagatay.cali/Desktop/cryptology-homework
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 136
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 29
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: solid
+    title: null
+    style:
+      boxShadow: none
+      margin: 0px
+    
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 607
+    content: "\e]1337;RemoteHost=cagatay.cali@C02XH0UPJG5J.local\a\e]1337;CurrentDir=/Users/cagatay.cali/Desktop/cryptology-homework\a\e]1337;ShellIntegrationVersion=10;shell=zsh\a"
+  - delay: 20
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                                       \r \r\e]2;cagatay.cali@C02XH0UPJG5J: ~/Desktop/cryptology-homework\a\e]1;..logy-homework\a"
+  - delay: 5
+    content: "\e]1337;SetKeyLabel=F1=\U0001F449 Desktop/cryptology-homework\a"
+  - delay: 76
+    content: "\e]1337;SetKeyLabel=F2=\U0001F38B master\a\e]1337;SetKeyLabel=F3=\U0001F64C\a"
+  - delay: 8
+    content: "\e]1337;SetKeyLabel=F4=\U0001F53C push\a"
+  - delay: 7
+    content: "\e]1337;SetKeyLabel=F5=\U0001F53D pull\a\e]1337;SetKeyLabel=F6=⚡️ npm-run\a"
+  - delay: 69
+    content: "\e]133;D;0\a\e]1337;RemoteHost=cagatay.cali@C02XH0UPJG5J.local\a\e]1337;CurrentDir=/Users/cagatay.cali/Desktop/cryptology-homework\a"
+  - delay: 5
+    content: "\r\e[0m\e[27m\e[24m\e[J\e]133;A\a\e[35mc²\e[00m ~/Desktop/cryptology-homework/ \e[00m\e[35m\e[35m[\e[32mmaster\e[35m]\e[39m \e[00m\e]133;B\a\e[K\e[?1h\e=\e[?2004h"
+  - delay: 1019
+    content: 'n'
+  - delay: 158
+    content: "\bnp"
+  - delay: 87
+    content: m
+  - delay: 159
+    content: ' '
+  - delay: 135
+    content: s
+  - delay: 163
+    content: t
+  - delay: 108
+    content: a
+  - delay: 96
+    content: r
+  - delay: 183
+    content: t
+  - delay: 185
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;npm start\a\e]1;npm\a\e]133;C;\a"
+  - delay: 257
+    content: "\r\n> cryptology-homework@1.0.0 start /Users/cagatay.cali/Desktop/cryptology-homework\r\n> node index.js\r\n\r\n"
+  - delay: 233
+    content: "\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0m\e[24D\e[24C"
+  - delay: 932
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mc\e[25D\e[25C"
+  - delay: 115
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mca\e[26D\e[26C"
+  - delay: 100
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcag\e[27D\e[27C"
+  - delay: 120
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcaga\e[28D\e[28C"
+  - delay: 72
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcagat\e[29D\e[29C"
+  - delay: 131
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcagata\e[30D\e[30C"
+  - delay: 139
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcagatay\e[31D\e[31C"
+  - delay: 369
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0m\e[36mcagatay\e[39m\e[31D\e[31C\r\n\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m\e[24D\e[24C"
+  - delay: 644
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m*\e[25D\e[25C"
+  - delay: 78
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m**\e[26D\e[26C"
+  - delay: 76
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m***\e[27D\e[27C"
+  - delay: 191
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m****\e[28D\e[28C"
+  - delay: 211
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m*****\e[29D\e[29C"
+  - delay: 276
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m\e[36m*****\e[39m\e[29D\e[29C\r\n"
+  - delay: 18
+    content: "\e[?25l\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ Show mailbox\e[39m \r\n  Send mail \r\n  Exit \e[7D\e[7C"
+  - delay: 1223
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\r\n  Show mailbox \r\n\e[36m❯ Send mail\e[39m \r\n  Exit \e[7D\e[7C"
+  - delay: 645
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\r\n\e[36m❯ Show mailbox\e[39m \r\n  Send mail \r\n  Exit \e[7D\e[7C"
+  - delay: 400
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[36mShow mailbox\e[39m\e[34D\e[34C\r\n\e[?25h"
+  - delay: 10
+    content: "┌─────────┬───────────┬────────┬────────────────┬──────────────────┐\r\n│ (index) │    to     │  from  │    message     │       date       │\r\n├─────────┼───────────┼────────┼────────────────┼──────────────────┤\r\n│    0    │ \e[32m'cagatay'\e[39m │ \e[32m'test'\e[39m │ \e[32m'hello taksim'\e[39m │ \e[32m'12 minutes ago'\e[39m │\r\n└─────────┴───────────┴────────┴────────────────┴──────────────────┘\r\n\e[?25l\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ Show mailbox\e[39m \r\n  Send mail \r\n  Exit \e[7D\e[7C"
+  - delay: 843
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\r\n  Show mailbox \r\n\e[36m❯ Send mail\e[39m \r\n  Exit \e[7D\e[7C"
+  - delay: 623
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[36mSend mail\e[39m\e[31D\e[31C\r\n\e[?25h\e[?25l\e[32m?\e[39m \e[1mWho do you want to send mail to?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ test\e[39m \e[7D\e[7C"
+  - delay: 500
+    content: "\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWho do you want to send mail to?\e[22m\e[0m \e[0m\r\n\e[36m❯ test\e[39m \e[7D\e[7C"
+  - delay: 541
+    content: "\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWho do you want to send mail to?\e[22m\e[0m \e[0m\e[36mtest\e[39m\e[39D\e[39C\r\n\e[?25h\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0m\e[23D\e[23C"
+  - delay: 1573
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mt\e[24D\e[24C"
+  - delay: 32
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mta\e[25D\e[25C"
+  - delay: 87
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtah\e[26D\e[26C"
+  - delay: 129
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtahs\e[27D\e[27C"
+  - delay: 169
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtahsk\e[28D\e[28C"
+  - delay: 246
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtahski\e[29D\e[29C"
+  - delay: 166
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtahskii\e[30D\e[30C"
+  - delay: 174
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtahskiim\e[31D\e[31C"
+  - delay: 134
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtahskiimm\e[32D\e[32C"
+  - delay: 361
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0m\e[36mtahskiimm\e[39m\e[32D\e[32C\r\n\e[90mundefined\e[39m\r\n\e[?25l\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ Show mailbox\e[39m \r\n  Send mail \r\n  Exit \e[7D\e[7C"
+  - delay: 1103
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\r\n  Show mailbox \r\n\e[36m❯ Send mail\e[39m \r\n  Exit \e[7D\e[7C"
+  - delay: 188
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\r\n  Show mailbox \r\n  Send mail \r\n\e[36m❯ Exit\e[39m \e[7D\e[7C"
+  - delay: 420
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[36mExit\e[39m\e[26D\e[26C\r\n\e[?25h\e[?25h"
+  - delay: 11
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                                       \r \r\e]2;cagatay.cali@C02XH0UPJG5J: ~/Desktop/cryptology-homework\a\e]1;..logy-homework\a\e]1337;SetKeyLabel=F1=\U0001F449 Desktop/cryptology-homework\a"
+  - delay: 88
+    content: "\e]1337;SetKeyLabel=F2=\U0001F38B master\a\e]1337;SetKeyLabel=F3=\U0001F525[!]\a"
+  - delay: 10
+    content: "\e]1337;SetKeyLabel=F4=\U0001F53C push\a"
+  - delay: 9
+    content: "\e]1337;SetKeyLabel=F5=\U0001F53D pull\a\e]1337;SetKeyLabel=F6=⚡️ npm-run\a"
+  - delay: 66
+    content: "\e]133;D;0\a\e]1337;RemoteHost=cagatay.cali@C02XH0UPJG5J.local\a\e]1337;CurrentDir=/Users/cagatay.cali/Desktop/cryptology-homework\a\r\e[0m\e[27m\e[24m\e[J\e]133;A\a\e[35mc²\e[00m ~/Desktop/cryptology-homework/ \e[00m\e[35m\e[35m[\e[32mmaster\e[31m*\e[35m]\e[39m \e[00m\e]133;B\a\e[K\e[?1h\e=\e[?2004h"
+  - delay: 404
+    content: npm start
+  - delay: 373
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;npm start\a\e]1;npm\a\e]133;C;\a"
+  - delay: 256
+    content: "\r\n> cryptology-homework@1.0.0 start /Users/cagatay.cali/Desktop/cryptology-homework\r\n> node index.js\r\n\r\n"
+  - delay: 227
+    content: "\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0m\e[24D\e[24C"
+  - delay: 1200
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mt\e[25D\e[25C"
+  - delay: 67
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mte\e[26D\e[26C"
+  - delay: 127
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mtes\e[27D\e[27C"
+  - delay: 104
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mtest\e[28D\e[28C"
+  - delay: 225
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0m\e[36mtest\e[39m\e[28D\e[28C\r\n\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m\e[24D\e[24C"
+  - delay: 217
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m*\e[25D\e[25C"
+  - delay: 77
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m**\e[26D\e[26C"
+  - delay: 74
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m***\e[27D\e[27C"
+  - delay: 182
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m****\e[28D\e[28C"
+  - delay: 217
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m*****\e[29D\e[29C"
+  - delay: 334
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m\e[36m*****\e[39m\e[29D\e[29C\r\n"
+  - delay: 18
+    content: "\e[?25l\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ Show mailbox\e[39m \r\n  Send mail \r\n  Exit \e[7D\e[7C"
+  - delay: 837
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[36mShow mailbox\e[39m\e[34D\e[34C\r\n\e[?25h"
+  - delay: 11
+    content: "┌─────────┬────────┬───────────┬─────────────┬─────────────────────┐\r\n│ (index) │   to   │   from    │   message   │        date         │\r\n├─────────┼────────┼───────────┼─────────────┼─────────────────────┤\r\n│    0    │ \e[32m'test'\e[39m │ \e[32m'cagatay'\e[39m │ \e[32m'tahskiimm'\e[39m │ \e[32m'a few seconds ago'\e[39m │\r\n└─────────┴────────┴───────────┴─────────────┴─────────────────────┘\r\n\e[?25l\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ Show mailbox\e[39m \r\n  Send mail \r\n  Exit \e[7D\e[7C"
+  - delay: 1152
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\r\n  Show mailbox \r\n  Send mail \r\n\e[36m❯ Exit\e[39m \e[7D\e[7C"
+  - delay: 414
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[36mExit\e[39m\e[26D\e[26C\r\n\e[?25h\e[?25h"
+  - delay: 12
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                                       \r \r\e]2;cagatay.cali@C02XH0UPJG5J: ~/Desktop/cryptology-homework\a\e]1;..logy-homework\a\e]1337;SetKeyLabel=F1=\U0001F449 Desktop/cryptology-homework\a"
+  - delay: 85
+    content: "\e]1337;SetKeyLabel=F2=\U0001F38B master\a\e]1337;SetKeyLabel=F3=\U0001F525[!]\a"
+  - delay: 9
+    content: "\e]1337;SetKeyLabel=F4=\U0001F53C push\a"
+  - delay: 9
+    content: "\e]1337;SetKeyLabel=F5=\U0001F53D pull\a\e]1337;SetKeyLabel=F6=⚡️ npm-run\a"
+  - delay: 70
+    content: "\e]133;D;0\a\e]1337;RemoteHost=cagatay.cali@C02XH0UPJG5J.local\a\e]1337;CurrentDir=/Users/cagatay.cali/Desktop/cryptology-homework\a\r\e[0m\e[27m\e[24m\e[J\e]133;A\a\e[35mc²\e[00m ~/Desktop/cryptology-homework/ \e[00m\e[35m\e[35m[\e[32mmaster\e[31m*\e[35m]\e[39m \e[00m\e]133;B\a\e[K\e[?1h\e=\e[?2004h"
+  - delay: 662
+    content: "\e[?2004l\r\r\n\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                                       \r \r\e]2;cagatay.cali@C02XH0UPJG5J: ~/Desktop/cryptology-homework\a\e]1;..logy-homework\a\e]1337;SetKeyLabel=F1=\U0001F449 Desktop/cryptology-homework\a"
+  - delay: 83
+    content: "\e]1337;SetKeyLabel=F2=\U0001F38B master\a\e]1337;SetKeyLabel=F3=\U0001F525[!]\a"
+  - delay: 9
+    content: "\e]1337;SetKeyLabel=F4=\U0001F53C push\a"
+  - delay: 10
+    content: "\e]1337;SetKeyLabel=F5=\U0001F53D pull\a\e]1337;SetKeyLabel=F6=⚡️ npm-run\a"
+  - delay: 71
+    content: "\e]133;C;\a\e]133;D;130\a\e]1337;RemoteHost=cagatay.cali@C02XH0UPJG5J.local\a\e]1337;CurrentDir=/Users/cagatay.cali/Desktop/cryptology-homework\a\r\e[0m\e[27m\e[24m\e[J\e]133;A\a\e[35mc²\e[00m ~/Desktop/cryptology-homework/ \e[00m\e[35m\e[35m[\e[32mmaster\e[31m*\e[35m]\e[39m \e[00m\e]133;B\a\e[K\e[?1h\e=\e[?2004h"
+  - delay: 590
+    content: "\e[?2004l\r\r\n"
