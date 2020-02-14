@@ -36,3 +36,8 @@ npm start
 
 
 ![Usage gif](./gif.gif "Usage gif")
+
+
+# TODO
+
+* End to end encrypt communications between users.

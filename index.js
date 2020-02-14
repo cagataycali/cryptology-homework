@@ -1,10 +1,21 @@
 const auth = require('./auth')
+const colors = require('colors')
 
-auth(({ status, username, message }) => {
-  const mail = require('./mail')
-  if (status) {
-    mail(username)
-  } else {
-    console.log(message.red)
-  }
-})
+function start () {
+  auth(({ status, username, message }) => {
+    const mail = require('./mail')
+    if (status) {
+      console.log('Log-in successfully.'.underline)
+      console.log('Welcome', colors.green.bold(username))
+
+      mail(username, () => {
+        console.log('Logged out.'.underline)
+        start()
+      })
+    } else {
+      console.log(message.red)
+    }
+  })
+}
+
+start()
