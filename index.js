@@ -2,13 +2,13 @@ const auth = require('./auth')
 const colors = require('colors')
 
 function start () {
-  auth(({ status, username, message }) => {
+  auth(({ status, user, message }) => {
     const mail = require('./mail')
     if (status) {
       console.log('Log-in successfully.'.underline)
-      console.log('Welcome', colors.green.bold(username))
+      console.log('Welcome', colors.green.bold(user.username))
 
-      mail(username, () => {
+      mail(user, () => {
         console.log('Logged out.'.underline)
         start()
       })
