@@ -84,7 +84,7 @@ const askUser = users => {
   })
 }
 
-const run = username => {
+const run = (username, callback) => {
   const questions = [
     {
       type: 'list',
@@ -153,6 +153,8 @@ const run = username => {
           console.log('Mail send successfully.'.green.bold.underlined)
           return run(username)
         })
+      } else {
+        callback()
       }
     })
 }
