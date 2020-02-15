@@ -14,6 +14,7 @@ function start () {
       })
     } else {
       console.log(message.red)
+      start()
     }
   })
 }
