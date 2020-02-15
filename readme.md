@@ -1,6 +1,17 @@
-# Installation
 
-> Project needs node.js runtime. Download from https://nodejs.org/en/download/
+# Cryptology Homework
+
+
+**Features**
+
+* Authenticating
+* E2E encrypted messaging between users
+
+
+**Installation**
+
+
+*Project needs node.js runtime. Download from https://nodejs.org/en/download/*
 
 Or browse & **run** in browser via `repl.it`
 
@@ -36,8 +47,3 @@ npm start
 
 
 ![Usage gif](./gif.gif "Usage gif")
-
-
-# TODO
-
-* End to end encrypt communications between users.

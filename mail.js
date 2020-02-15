@@ -10,7 +10,6 @@ const moment = require('moment')
 const crypto = require('crypto')
 const loadingMails = ora('Loading mails\n')
 const sendingMails = ora('Sending your super secret mail\n')
-const encryptingMails = ora('Encrypting your message\n')
 const [userDB, mailDB] = [
   new Datastore({ filename: './user', autoload: true }),
   new Datastore({ filename: './db', autoload: true })

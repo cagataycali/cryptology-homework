@@ -50,7 +50,7 @@ config:
   # Don't forget to add a backgroundColor style with a null as type
   frameBox:
     type: floating
-    title: Terminalizer
+    title: cagataycali
     style:
       border: 0px black solid
       # boxShadow: none
@@ -111,21 +111,567 @@ config:
   
 # Records, feel free to edit them
 records:
-  - delay: 1325
+  - delay: 657
     content: "\e]1337;RemoteHost=cagatay.cali@c02xh0upjg5j\a\e]1337;CurrentDir=/Users/cagatay.cali/Desktop/cryptology-homework\a\e]1337;ShellIntegrationVersion=10;shell=zsh\a"
   - delay: 28
     content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                                                                                                \r \r\e]2;cagatay.cali@c02xh0upjg5j: ~/Desktop/cryptology-homework\a\e]1;..logy-homework\a"
-  - delay: 8
+  - delay: 6
     content: "\e]1337;SetKeyLabel=F1=\U0001F449 Desktop/cryptology-homework\a"
-  - delay: 99
-    content: "\e]1337;SetKeyLabel=F2=\U0001F38B master\a\e]1337;SetKeyLabel=F3=\U0001F525[+!?]\a"
+  - delay: 91
+    content: "\e]1337;SetKeyLabel=F2=\U0001F38B master\a\e]1337;SetKeyLabel=F3=\U0001F525[!]\a"
   - delay: 10
     content: "\e]1337;SetKeyLabel=F4=\U0001F53C push\a"
   - delay: 11
     content: "\e]1337;SetKeyLabel=F5=\U0001F53D pull\a\e]1337;SetKeyLabel=F6=⚡️ npm-run\a"
-  - delay: 92
+  - delay: 85
     content: "\e]133;D;0\a\e]1337;RemoteHost=cagatay.cali@c02xh0upjg5j\a\e]1337;CurrentDir=/Users/cagatay.cali/Desktop/cryptology-homework\a"
   - delay: 5
-    content: "\r\e[0m\e[27m\e[24m\e[J\e]133;A\a\e[35mc²\e[00m ~/Desktop/cryptology-homework/ \e[00m\e[35m\e[35m[\e[32mmaster\e[33m+\e[31m*\e[35m]\e[39m \e[00m\e]133;B\a\e[K\e[?1h\e=\e[?2004h"
-  - delay: 2273
+    content: "\r\e[0m\e[27m\e[24m\e[J\e]133;A\a\e[35mc²\e[00m ~/Desktop/cryptology-homework/ \e[00m\e[35m\e[35m[\e[32mmaster\e[31m*\e[35m]\e[39m \e[00m\e]133;B\a\e[K\e[?1h\e=\e[?2004h"
+  - delay: 444
+    content: 'n'
+  - delay: 75
+    content: "\bno"
+  - delay: 67
+    content: d
+  - delay: 64
+    content: e
+  - delay: 60
+    content: ' '
+  - delay: 69
+    content: i
+  - delay: 163
+    content: 'n'
+  - delay: 66
+    content: d
+  - delay: 63
+    content: e
+  - delay: 51
+    content: x
+  - delay: 105
+    content: .
+  - delay: 204
+    content: j
+  - delay: 76
+    content: s
+  - delay: 304
+    content: "\e[?1l\e>\e[?2004l\r\r\n\e]2;node index.js\a\e]1;node\a\e]133;C;\a"
+  - delay: 271
+    content: "\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0m\e[24D\e[24C"
+  - delay: 894
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mc\e[25D\e[25C"
+  - delay: 80
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mca\e[26D\e[26C"
+  - delay: 97
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcag\e[27D\e[27C"
+  - delay: 91
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcaga\e[28D\e[28C"
+  - delay: 89
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcagat\e[29D\e[29C"
+  - delay: 100
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcagata\e[30D\e[30C"
+  - delay: 117
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcagatay\e[31D\e[31C"
+  - delay: 165
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0m\e[36mcagatay\e[39m\e[31D\e[31C\r\n\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m\e[24D\e[24C"
+  - delay: 1681
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m*\e[25D\e[25C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m**\e[26D\e[26C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m***\e[27D\e[27C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m****\e[28D\e[28C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m*****\e[29D\e[29C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m******\e[30D\e[30C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m*******\e[31D\e[31C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m********\e[32D\e[32C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m*********\e[33D\e[33C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m**********\e[34D\e[34C"
+  - delay: 263
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m\e[36m**********\e[39m\e[34D\e[34C\r\n\e[?25l\e[36m⠋\e[39m Authenticating\r\n"
+  - delay: 83
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[36m⠙\e[39m Authenticating\r\n"
+  - delay: 85
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[36m⠹\e[39m Authenticating\r\n"
+  - delay: 82
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[36m⠸\e[39m Authenticating\r\n"
+  - delay: 82
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[31m⠼\e[39m Authenticating\r\n"
+  - delay: 84
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[31m⠴\e[39m Authenticating\r\n"
+  - delay: 84
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[31m⠦\e[39m Authenticating\r\n"
+  - delay: 82
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[31m⠧\e[39m Authenticating\r\n"
+  - delay: 550
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[34m⠇\e[39m Authenticating\r\n"
+  - delay: 85
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[34m⠏\e[39m Authenticating\r\n"
+  - delay: 83
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[34m⠋\e[39m Authenticating\r\n"
+  - delay: 84
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[34m⠙\e[39m Authenticating\r\n"
+  - delay: 570
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[?25h"
+  - delay: 10
+    content: "\e[4mLog-in successfully.\e[24m\r\nWelcome \e[32m\e[1mcagatay\e[22m\e[39m\r\n\e[?25l\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ Show mailbox\e[39m \r\n  Send mail \r\n  Exit \e[7D\e[7C"
+  - delay: 1155
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[36mShow mailbox\e[39m\e[34D\e[34C\r\n\e[?25h\e[?25l\e[36m⠋\e[39m Loading mails\r\n\e[2K\e[1G\e[1A\e[2K\e[1G\e[?25h\e[31m✖\e[39m There's no mail for now.\r\n\e[?25h\e[?25l\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ Show mailbox\e[39m \r\n  Send mail \r\n  Exit \e[7D\e[7C"
+  - delay: 1065
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\r\n  Show mailbox \r\n\e[36m❯ Send mail\e[39m \r\n  Exit \e[7D\e[7C"
+  - delay: 561
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[36mSend mail\e[39m\e[31D\e[31C\r\n\e[?25h\e[?25l\e[32m?\e[39m \e[1mWho do you want to send mail to?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ test\e[39m \e[7D\e[7C"
+  - delay: 708
+    content: "\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWho do you want to send mail to?\e[22m\e[0m \e[0m\e[36mtest\e[39m\e[39D\e[39C\r\n\e[?25h\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0m\e[23D\e[23C"
+  - delay: 2008
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mb\e[24D\e[24C"
+  - delay: 138
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mba\e[25D\e[25C"
+  - delay: 110
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbak\e[26D\e[26C"
+  - delay: 171
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbakt\e[27D\e[27C"
+  - delay: 73
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktı\e[28D\e[28C"
+  - delay: 84
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktın\e[29D\e[29C"
+  - delay: 196
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktınt\e[30D\e[30C"
+  - delay: 48
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktınta\e[31D\e[31C"
+  - delay: 67
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıntan\e[32D\e[32C"
+  - delay: 64
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıntan \e[33D\e[33C"
+  - delay: 109
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıntan s\e[34D\e[34C"
+  - delay: 101
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıntan so\e[35D\e[35C"
+  - delay: 30
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıntan son\e[36D\e[36C"
+  - delay: 72
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıntan sonr\e[37D\e[37C"
+  - delay: 21
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıntan sonra\e[38D\e[38C"
+  - delay: 469
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıntan sonr\e[37D\e[37C"
+  - delay: 250
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıntan son\e[36D\e[36C"
+  - delay: 35
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıntan so\e[35D\e[35C"
+  - delay: 33
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıntan s\e[34D\e[34C"
+  - delay: 33
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıntan \e[33D\e[33C"
+  - delay: 32
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıntan\e[32D\e[32C"
+  - delay: 34
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktınta\e[31D\e[31C"
+  - delay: 33
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktınt\e[30D\e[30C"
+  - delay: 33
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktın\e[29D\e[29C"
+  - delay: 391
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktı\e[28D\e[28C"
+  - delay: 148
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbakt\e[27D\e[27C"
+  - delay: 509
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktı\e[28D\e[28C"
+  - delay: 194
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktık\e[29D\e[29C"
+  - delay: 77
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıkt\e[30D\e[30C"
+  - delay: 63
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıkta\e[31D\e[31C"
+  - delay: 56
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıktan\e[32D\e[32C"
+  - delay: 68
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıktan \e[33D\e[33C"
+  - delay: 96
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıktan s\e[34D\e[34C"
+  - delay: 52
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıktan so\e[35D\e[35C"
+  - delay: 73
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıktan son\e[36D\e[36C"
+  - delay: 161
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıktan sonr\e[37D\e[37C"
+  - delay: 52
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıktan sonra\e[38D\e[38C"
+  - delay: 119
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıktan sonra \e[39D\e[39C"
+  - delay: 204
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıktan sonra s\e[40D\e[40C"
+  - delay: 131
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıktan sonra si\e[41D\e[41C"
+  - delay: 48
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıktan sonra sil\e[42D\e[42C"
+  - delay: 168
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıktan sonra sil \e[43D\e[43C"
+  - delay: 169
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıktan sonra sil t\e[44D\e[44C"
+  - delay: 84
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıktan sonra sil tm\e[45D\e[45C"
+  - delay: 118
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıktan sonra sil tmm\e[46D\e[46C"
+  - delay: 79
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıktan sonra sil tmm \e[47D\e[47C"
+  - delay: 98
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıktan sonra sil tmm m\e[48D\e[48C"
+  - delay: 74
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıktan sonra sil tmm mı\e[49D\e[49C"
+  - delay: 252
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mbaktıktan sonra sil tmm mı?\e[50D\e[50C"
+  - delay: 506
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0m\e[36mbaktıktan sonra sil tmm mı?\e[39m\e[50D\e[50C\r\n\e[?25l\e[36m⠋\e[39m Sending your super secret mail\r\n"
+  - delay: 8
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[?25h\e[32m✔\e[39m Your message is now only read by \e[32m\e[4m\e[1mtest\e[22m\e[24m\e[39m.\r\n\e[?25h\e[34mℹ\e[39m Sending...\r\n"
+  - delay: 2005
+    content: "\e[?25h\e[32m✔\e[39m Mail sent to \e[32m\e[4m\e[1mtest\e[22m\e[24m\e[39m.\r\n\e[?25h\e[?25l\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ Show mailbox\e[39m \r\n  Send mail \r\n  Exit \e[7D\e[7C"
+  - delay: 1126
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\r\n  Show mailbox \r\n  Send mail \r\n\e[36m❯ Exit\e[39m \e[7D\e[7C"
+  - delay: 229
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\r\n  Show mailbox \r\n\e[36m❯ Send mail\e[39m \r\n  Exit \e[7D\e[7C"
+  - delay: 958
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\r\n\e[36m❯ Show mailbox\e[39m \r\n  Send mail \r\n  Exit \e[7D\e[7C"
+  - delay: 406
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\r\n  Show mailbox \r\n  Send mail \r\n\e[36m❯ Exit\e[39m \e[7D\e[7C"
+  - delay: 452
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[36mExit\e[39m\e[26D\e[26C\r\n\e[?25h\e[4mLogged out.\e[24m\r\n\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0m\e[24D\e[24C"
+  - delay: 462
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mt\e[25D\e[25C"
+  - delay: 44
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mte\e[26D\e[26C"
+  - delay: 151
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mtes\e[27D\e[27C"
+  - delay: 73
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mtest\e[28D\e[28C"
+  - delay: 240
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0m\e[36mtest\e[39m\e[28D\e[28C\r\n\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m\e[24D\e[24C"
+  - delay: 1263
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m*\e[25D\e[25C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m**\e[26D\e[26C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m***\e[27D\e[27C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m****\e[28D\e[28C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m*****\e[29D\e[29C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m******\e[30D\e[30C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m*******\e[31D\e[31C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m********\e[32D\e[32C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m*********\e[33D\e[33C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m**********\e[34D\e[34C"
+  - delay: 184
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m\e[36m**********\e[39m\e[34D\e[34C\r\n\e[?25l\e[34m⠋\e[39m Authenticating\r\n"
+  - delay: 84
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[34m⠙\e[39m Authenticating\r\n"
+  - delay: 85
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[34m⠹\e[39m Authenticating\r\n"
+  - delay: 81
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[34m⠸\e[39m Authenticating\r\n"
+  - delay: 79
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[31m⠼\e[39m Authenticating\r\n"
+  - delay: 80
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[31m⠴\e[39m Authenticating\r\n"
+  - delay: 82
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[31m⠦\e[39m Authenticating\r\n"
+  - delay: 79
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[31m⠧\e[39m Authenticating\r\n"
+  - delay: 557
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[34m⠇\e[39m Authenticating\r\n"
+  - delay: 85
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[34m⠏\e[39m Authenticating\r\n"
+  - delay: 84
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[34m⠋\e[39m Authenticating\r\n"
+  - delay: 82
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[34m⠙\e[39m Authenticating\r\n"
+  - delay: 578
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[?25h\e[4mLog-in successfully.\e[24m\r\nWelcome \e[32m\e[1mtest\e[22m\e[39m\r\n\e[?25l\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ Show mailbox\e[39m \r\n  Send mail \r\n  Exit \e[7D\e[7C"
+  - delay: 913
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[36mShow mailbox\e[39m\e[34D\e[34C\r\n\e[?25h\e[?25l\e[36m⠋\e[39m Loading mails\r\n"
+  - delay: 84
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[36m⠙\e[39m Mails gathered, will be decrypted..."
+  - delay: 83
+    content: "\e[2K\e[1G\e[36m⠹\e[39m Mails gathered, will be decrypted..."
+  - delay: 84
+    content: "\e[2K\e[1G\e[36m⠸\e[39m Mails gathered, will be decrypted..."
+  - delay: 80
+    content: "\e[2K\e[1G\e[36m⠼\e[39m Mails gathered, will be decrypted..."
+  - delay: 85
+    content: "\e[2K\e[1G\e[36m⠴\e[39m Mails gathered, will be decrypted..."
+  - delay: 81
+    content: "\e[2K\e[1G\e[36m⠦\e[39m Mails gathered, will be decrypted..."
+  - delay: 85
+    content: "\e[2K\e[1G\e[36m⠧\e[39m Mails gathered, will be decrypted..."
+  - delay: 82
+    content: "\e[2K\e[1G\e[36m⠇\e[39m Mails gathered, will be decrypted..."
+  - delay: 81
+    content: "\e[2K\e[1G\e[36m⠏\e[39m Mails gathered, will be decrypted..."
+  - delay: 82
+    content: "\e[2K\e[1G\e[36m⠋\e[39m Mails gathered, will be decrypted..."
+  - delay: 83
+    content: "\e[2K\e[1G\e[36m⠙\e[39m Mails gathered, will be decrypted..."
+  - delay: 81
+    content: "\e[2K\e[1G\e[36m⠹\e[39m Mails gathered, will be decrypted..."
+  - delay: 82
+    content: "\e[2K\e[1G\e[36m⠸\e[39m Mails gathered, will be decrypted..."
+  - delay: 80
+    content: "\e[2K\e[1G\e[36m⠼\e[39m Mails gathered, will be decrypted..."
+  - delay: 84
+    content: "\e[2K\e[1G\e[36m⠴\e[39m Mails gathered, will be decrypted..."
+  - delay: 83
+    content: "\e[2K\e[1G\e[36m⠦\e[39m Mails gathered, will be decrypted..."
+  - delay: 82
+    content: "\e[2K\e[1G\e[36m⠧\e[39m Mails gathered, will be decrypted..."
+  - delay: 85
+    content: "\e[2K\e[1G\e[36m⠇\e[39m Mails gathered, will be decrypted..."
+  - delay: 85
+    content: "\e[2K\e[1G\e[36m⠏\e[39m Mails gathered, will be decrypted..."
+  - delay: 83
+    content: "\e[2K\e[1G\e[36m⠋\e[39m Mails gathered, will be decrypted..."
+  - delay: 80
+    content: "\e[2K\e[1G\e[36m⠙\e[39m Mails gathered, will be decrypted..."
+  - delay: 85
+    content: "\e[2K\e[1G\e[36m⠹\e[39m Mails gathered, will be decrypted..."
+  - delay: 83
+    content: "\e[2K\e[1G\e[36m⠸\e[39m Mails gathered, will be decrypted..."
+  - delay: 84
+    content: "\e[2K\e[1G\e[36m⠼\e[39m Mails gathered, will be decrypted..."
+  - delay: 26
+    content: "\e[2K\e[1G\e[?25h\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\r\n┌─────────┬────────┬───────────┬───────────────────────────────┬─────────────────────┐\r\n│ (index) │   to   │   from    │            message            │        date         │\r\n├─────────┼────────┼───────────┼───────────────────────────────┼─────────────────────┤\r\n│    0    │ \e[32m'test'\e[39m │ \e[32m'cagatay'\e[39m │ \e[32m'baktıktan sonra sil tmm mı?'\e[39m │ \e[32m'a few seconds ago'\e[39m │\r\n└─────────┴────────┴───────────┴───────────────────────────────┴─────────────────────┘\r\n\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\r\n\e[?25l\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ Show mailbox\e[39m \r\n  Send mail \r\n  Exit \e[7D\e[7C"
+  - delay: 1117
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\r\n  Show mailbox \r\n\e[36m❯ Send mail\e[39m \r\n  Exit \e[7D\e[7C"
+  - delay: 1350
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[36mSend mail\e[39m\e[31D\e[31C\r\n\e[?25h\e[?25l\e[32m?\e[39m \e[1mWho do you want to send mail to?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ cagatay\e[39m \e[10D\e[10C"
+  - delay: 470
+    content: "\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mWho do you want to send mail to?\e[22m\e[0m \e[0m\e[36mcagatay\e[39m\e[42D\e[42C\r\n\e[?25h\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0m\e[23D\e[23C"
+  - delay: 568
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mt\e[24D\e[24C"
+  - delay: 106
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtm\e[25D\e[25C"
+  - delay: 110
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm\e[26D\e[26C"
+  - delay: 88
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm \e[27D\e[27C"
+  - delay: 109
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm a\e[28D\e[28C"
+  - delay: 124
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aş\e[29D\e[29C"
+  - delay: 288
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşm\e[30D\e[30C"
+  - delay: 257
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aş\e[29D\e[29C"
+  - delay: 465
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşk\e[30D\e[30C"
+  - delay: 203
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm\e[31D\e[31C"
+  - delay: 71
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm \e[32D\e[32C"
+  - delay: 317
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm h\e[33D\e[33C"
+  - delay: 196
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hm\e[34D\e[34C"
+  - delay: 163
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn\e[35D\e[35C"
+  - delay: 522
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn \e[36D\e[36C"
+  - delay: 265
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn s\e[37D\e[37C"
+  - delay: 29
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn si\e[38D\e[38C"
+  - delay: 62
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn sil\e[39D\e[39C"
+  - delay: 243
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silc\e[40D\e[40C"
+  - delay: 73
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm\e[41D\e[41C"
+  - delay: 802
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm.\e[42D\e[42C"
+  - delay: 642
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. \e[43D\e[43C"
+  - delay: 206
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. .\e[44D\e[44C"
+  - delay: 111
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. .s\e[45D\e[45C"
+  - delay: 932
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. .s\e[45D\e[44C"
+  - delay: 476
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. .s\e[45D\e[43C"
+  - delay: 350
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. B.s\e[46D\e[44C"
+  - delay: 118
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Ba.s\e[47D\e[45C"
+  - delay: 71
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Ban.s\e[48D\e[46C"
+  - delay: 100
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana.s\e[49D\e[47C"
+  - delay: 100
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana .s\e[50D\e[48C"
+  - delay: 212
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana g.s\e[51D\e[49C"
+  - delay: 188
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gb.s\e[52D\e[50C"
+  - delay: 191
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gbn.s\e[53D\e[51C"
+  - delay: 420
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gb.s\e[52D\e[50C"
+  - delay: 170
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana g.s\e[51D\e[49C"
+  - delay: 94
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gv.s\e[52D\e[50C"
+  - delay: 99
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gvn.s\e[53D\e[51C"
+  - delay: 261
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gvnm.s\e[54D\e[52C"
+  - delay: 293
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gvnmy.s\e[55D\e[53C"
+  - delay: 296
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gvnmym.s\e[56D\e[54C"
+  - delay: 508
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gvnmymo.s\e[57D\e[55C"
+  - delay: 520
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gvnmym.s\e[56D\e[54C"
+  - delay: 125
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gvnmy.s\e[55D\e[53C"
+  - delay: 119
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gvnm.s\e[54D\e[52C"
+  - delay: 439
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gvnmi.s\e[55D\e[53C"
+  - delay: 153
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gvnmiy.s\e[56D\e[54C"
+  - delay: 84
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gvnmiyo.s\e[57D\e[55C"
+  - delay: 213
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gvnmiyo .s\e[58D\e[56C"
+  - delay: 128
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gvnmiyo m.s\e[59D\e[57C"
+  - delay: 280
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gvnmiyo ms.s\e[60D\e[58C"
+  - delay: 69
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gvnmiyo msn.s\e[61D\e[59C"
+  - delay: 355
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0mtmm aşkm hmn silcm. Bana gvnmiyo msn .s\e[62D\e[60C"
+  - delay: 882
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your message?\e[22m\e[0m \e[0m\e[36mtmm aşkm hmn silcm. Bana gvnmiyo msn .s\e[39m\e[62D\e[62C\r\n\e[?25l\e[36m⠋\e[39m Encrypting successfully..."
+  - delay: 8
+    content: "\e[2K\e[1G\e[?25h\e[32m✔\e[39m Your message is now only read by \e[32m\e[4m\e[1mcagatay\e[22m\e[24m\e[39m.\r\n\e[?25h\e[34mℹ\e[39m Sending...\r\n"
+  - delay: 2001
+    content: "\e[?25h\e[32m✔\e[39m Mail sent to \e[32m\e[4m\e[1mcagatay\e[22m\e[24m\e[39m.\r\n\e[?25h\e[?25l\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ Show mailbox\e[39m \r\n  Send mail \r\n  Exit \e[7D\e[7C"
+  - delay: 376
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\r\n  Show mailbox \r\n  Send mail \r\n\e[36m❯ Exit\e[39m \e[7D\e[7C"
+  - delay: 386
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[36mExit\e[39m\e[26D\e[26C\r\n\e[?25h\e[4mLogged out.\e[24m\r\n\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0m\e[24D\e[24C"
+  - delay: 528
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mc\e[25D\e[25C"
+  - delay: 68
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mca\e[26D\e[26C"
+  - delay: 99
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcag\e[27D\e[27C"
+  - delay: 84
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcaga\e[28D\e[28C"
+  - delay: 16
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcagae\e[29D\e[29C"
+  - delay: 68
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcagaet\e[30D\e[30C"
+  - delay: 78
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcagaeta\e[31D\e[31C"
+  - delay: 88
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcagaetay\e[32D\e[32C"
+  - delay: 351
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcagaeta\e[31D\e[31C"
+  - delay: 122
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcagaet\e[30D\e[30C"
+  - delay: 342
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcagae\e[29D\e[29C"
+  - delay: 138
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcaga\e[28D\e[28C"
+  - delay: 126
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcagat\e[29D\e[29C"
+  - delay: 68
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcagata\e[30D\e[30C"
+  - delay: 135
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0mcagatay\e[31D\e[31C"
+  - delay: 200
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0m\e[36mcagatay\e[39m\e[31D\e[31C\r\n\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m\e[24D\e[24C"
+  - delay: 1111
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m*\e[25D\e[25C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m**\e[26D\e[26C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m***\e[27D\e[27C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m****\e[28D\e[28C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m*****\e[29D\e[29C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m******\e[30D\e[30C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m*******\e[31D\e[31C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m********\e[32D\e[32C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m*********\e[33D\e[33C\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m**********\e[34D\e[34C"
+  - delay: 69
+    content: "\e[2K\e[G\e[32m?\e[39m \e[1mWhat's your password?\e[22m\e[0m \e[0m\e[36m**********\e[39m\e[34D\e[34C\r\n\e[?25l\e[34m⠋\e[39m Authenticating\r\n"
+  - delay: 84
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[34m⠙\e[39m Authenticating\r\n"
+  - delay: 84
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[34m⠹\e[39m Authenticating\r\n"
+  - delay: 84
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[34m⠸\e[39m Authenticating\r\n"
+  - delay: 82
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[31m⠼\e[39m Authenticating\r\n"
+  - delay: 84
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[31m⠴\e[39m Authenticating\r\n"
+  - delay: 84
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[31m⠦\e[39m Authenticating\r\n"
+  - delay: 84
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[31m⠧\e[39m Authenticating\r\n"
+  - delay: 551
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[34m⠇\e[39m Authenticating\r\n"
+  - delay: 83
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[34m⠏\e[39m Authenticating\r\n"
+  - delay: 83
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[34m⠋\e[39m Authenticating\r\n"
+  - delay: 81
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[34m⠙\e[39m Authenticating\r\n"
+  - delay: 578
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[?25h\e[4mLog-in successfully.\e[24m\r\nWelcome \e[32m\e[1mcagatay\e[22m\e[39m\r\n\e[?25l\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ Show mailbox\e[39m \r\n  Send mail \r\n  Exit \e[7D\e[7C"
+  - delay: 594
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[36mShow mailbox\e[39m\e[34D\e[34C\r\n\e[?25h\e[?25l\e[36m⠋\e[39m Mails decrypted succesfully.\r\n"
+  - delay: 83
+    content: "\e[2K\e[1G\e[1A\e[2K\e[1G\e[36m⠙\e[39m Mails gathered, will be decrypted..."
+  - delay: 83
+    content: "\e[2K\e[1G\e[36m⠹\e[39m Mails gathered, will be decrypted..."
+  - delay: 84
+    content: "\e[2K\e[1G\e[36m⠸\e[39m Mails gathered, will be decrypted..."
+  - delay: 83
+    content: "\e[2K\e[1G\e[36m⠼\e[39m Mails gathered, will be decrypted..."
+  - delay: 82
+    content: "\e[2K\e[1G\e[36m⠴\e[39m Mails gathered, will be decrypted..."
+  - delay: 85
+    content: "\e[2K\e[1G\e[36m⠦\e[39m Mails gathered, will be decrypted..."
+  - delay: 83
+    content: "\e[2K\e[1G\e[36m⠧\e[39m Mails gathered, will be decrypted..."
+  - delay: 82
+    content: "\e[2K\e[1G\e[36m⠇\e[39m Mails gathered, will be decrypted..."
+  - delay: 85
+    content: "\e[2K\e[1G\e[36m⠏\e[39m Mails gathered, will be decrypted..."
+  - delay: 83
+    content: "\e[2K\e[1G\e[36m⠋\e[39m Mails gathered, will be decrypted..."
+  - delay: 83
+    content: "\e[2K\e[1G\e[36m⠙\e[39m Mails gathered, will be decrypted..."
+  - delay: 83
+    content: "\e[2K\e[1G\e[36m⠹\e[39m Mails gathered, will be decrypted..."
+  - delay: 84
+    content: "\e[2K\e[1G\e[36m⠸\e[39m Mails gathered, will be decrypted..."
+  - delay: 81
+    content: "\e[2K\e[1G\e[36m⠼\e[39m Mails gathered, will be decrypted..."
+  - delay: 85
+    content: "\e[2K\e[1G\e[36m⠴\e[39m Mails gathered, will be decrypted..."
+  - delay: 82
+    content: "\e[2K\e[1G\e[36m⠦\e[39m Mails gathered, will be decrypted..."
+  - delay: 82
+    content: "\e[2K\e[1G\e[36m⠧\e[39m Mails gathered, will be decrypted..."
+  - delay: 84
+    content: "\e[2K\e[1G\e[36m⠇\e[39m Mails gathered, will be decrypted..."
+  - delay: 84
+    content: "\e[2K\e[1G\e[36m⠏\e[39m Mails gathered, will be decrypted..."
+  - delay: 84
+    content: "\e[2K\e[1G\e[36m⠋\e[39m Mails gathered, will be decrypted..."
+  - delay: 83
+    content: "\e[2K\e[1G\e[36m⠙\e[39m Mails gathered, will be decrypted..."
+  - delay: 83
+    content: "\e[2K\e[1G\e[36m⠹\e[39m Mails gathered, will be decrypted..."
+  - delay: 81
+    content: "\e[2K\e[1G\e[36m⠸\e[39m Mails gathered, will be decrypted..."
+  - delay: 81
+    content: "\e[2K\e[1G\e[36m⠼\e[39m Mails gathered, will be decrypted..."
+  - delay: 12
+    content: "\e[2K\e[1G\e[?25h\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\r\n┌─────────┬───────────┬────────┬───────────────────────────────────────────┬─────────────────────┐\r\n│ (index) │    to     │  from  │                  message                  │        date         │\r\n├─────────┼───────────┼────────┼───────────────────────────────────────────┼─────────────────────┤\r\n│    0    │ \e[32m'cagatay'\e[39m │ \e[32m'test'\e[39m │ \e[32m'tmm aşkm hmn silcm. Bana gvnmiyo msn .s'\e[39m │ \e[32m'a few seconds ago'\e[39m │\r\n└─────────┴───────────┴────────┴───────────────────────────────────────────┴─────────────────────┘\r\n\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\e[31m-\e[39m\e[33m-\e[39m\e[32m-\e[39m\e[34m-\e[39m\e[35m-\e[39m\r\n\e[?25l\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[2m(Use arrow keys)\e[22m\r\n\e[36m❯ Show mailbox\e[39m \r\n  Send mail \r\n  Exit \e[7D\e[7C"
+  - delay: 2545
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\r\n  Show mailbox \r\n  Send mail \r\n\e[36m❯ Exit\e[39m \e[7D\e[7C"
+  - delay: 235
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\r\n  Show mailbox \r\n\e[36m❯ Send mail\e[39m \r\n  Exit \e[7D\e[7C"
+  - delay: 430
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\r\n\e[36m❯ Show mailbox\e[39m \r\n  Send mail \r\n  Exit \e[7D\e[7C"
+  - delay: 374
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\r\n  Show mailbox \r\n  Send mail \r\n\e[36m❯ Exit\e[39m \e[7D\e[7C"
+  - delay: 315
+    content: "\e[2K\e[1A\e[2K\e[1A\e[2K\e[1A\e[2K\e[G\e[32m?\e[39m \e[1mHow can I help you?\e[22m\e[0m \e[0m\e[36mExit\e[39m\e[26D\e[26C\r\n\e[?25h\e[4mLogged out.\e[24m\r\n\e[32m?\e[39m \e[1mWhat's your username?\e[22m\e[0m \e[0m\e[24D\e[24C"
+  - delay: 1165
+    content: "\r\n\e[?25h"
+  - delay: 5
+    content: "\e[1m\e[7m%\e[27m\e[1m\e[0m                                                                                                                                                                                                \r \r\e]2;cagatay.cali@c02xh0upjg5j: ~/Desktop/cryptology-homework\a\e]1;..logy-homework\a"
+  - delay: 5
+    content: "\e]1337;SetKeyLabel=F1=\U0001F449 Desktop/cryptology-homework\a"
+  - delay: 96
+    content: "\e]1337;SetKeyLabel=F2=\U0001F38B master\a\e]1337;SetKeyLabel=F3=\U0001F525[!]\a"
+  - delay: 11
+    content: "\e]1337;SetKeyLabel=F4=\U0001F53C push\a"
+  - delay: 11
+    content: "\e]1337;SetKeyLabel=F5=\U0001F53D pull\a\e]1337;SetKeyLabel=F6=⚡️ npm-run\a"
+  - delay: 81
+    content: "\e]133;D;0\a\e]1337;RemoteHost=cagatay.cali@c02xh0upjg5j\a\e]1337;CurrentDir=/Users/cagatay.cali/Desktop/cryptology-homework\a\r\e[0m\e[27m\e[24m\e[J\e]133;A\a\e[35mc²\e[00m ~/Desktop/cryptology-homework/ \e[00m\e[35m\e[35m[\e[32mmaster\e[31m*\e[35m]\e[39m \e[00m\e]133;B\a\e[K\e[?1h\e=\e[?2004h"
+  - delay: 923
     content: "\e[?2004l\r\r\n"

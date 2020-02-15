@@ -1,3 +1,5 @@
+// Thx trulymittal.
+// Code author: https://github.com/trulymittal/ECDH-AES-256-GCM
 const crypto = require('crypto')
 
 const alice = crypto.createECDH('secp256k1')
