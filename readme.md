@@ -4,8 +4,8 @@
 
 **Features**
 
-* Authenticating
-* E2E encrypted messaging between users
+* Authenticating ( pbkdf2 & sha512 )
+* E2E encrypted messaging between users ( ECDH-AES-256-GCM )
 
 
 **Installation**
