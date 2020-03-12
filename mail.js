@@ -146,6 +146,24 @@ const getOtherUsers = username => {
   })
 }
 
+const sendMail = (user, users, mail, cb) => {
+  sendingMails.start()
+  sendingMails.text = 'Encrypting your message...'
+  const hash = generateHash(mail.message)
+  const message = encryptMessage(user, users.find(_user => _user.username === mail.username), mail.message, true)
+  sendingMails.text = 'Encrypting successfully...'
+  sendingMails.succeed(`Your message is now only read by ${colors.green.underline.bold(mail.username)}.`)
+  sendingMails.info('Sending...')
+  mailDB.insert({ from: user.username, to: mail.username, message, date: new Date(), hash }, (err, doc) => {
+    if (err) {
+      sendingMails.fail('Mail didn\'t sended.')
+      sendingMails.stop()
+    } else {
+      cb({ from: user.username, to: mail.username, message, date: new Date(), hash })
+    }
+  })
+}
+
 const askUser = users => {
   return new Promise(resolve => {
     inquirer
@@ -247,26 +265,15 @@ const run = (user, callback) => {
           return run(user, callback)
         }
         const mail = await askUser(users)
-        sendingMails.start()
-        sendingMails.text = 'Encrypting your message...'
-        const hash = generateHash(mail.message)
-        const message = encryptMessage(user, users.find(user => user.username === mail.username), mail.message, true)
-        sendingMails.text = 'Encrypting successfully...'
-        sendingMails.succeed(`Your message is now only read by ${colors.green.underline.bold(mail.username)}.`)
-        sendingMails.info('Sending...')
-        mailDB.insert({ from: username, to: mail.username, message, date: new Date(), hash }, (err, doc) => {
-          if (err) {
-            sendingMails.fail('Mail didn\'t sended.')
+        // Start sending mail
+        sendMail(user, users, mail, () => {
+          setTimeout(() => {
+            sendingMails.succeed(`Mail sent to ${colors.green.underline.bold(mail.username)}.`)
             sendingMails.stop()
-          } else {
-            // Just show loading for secure looks UX.
-            setTimeout(() => {
-              sendingMails.succeed(`Mail sent to ${colors.green.underline.bold(mail.username)}.`)
-              sendingMails.stop()
-              run(user, callback)
-            }, 1000 * 2)
-          }
+            run(user, callback)
+          }, 1000 * 2)
         })
+        // End sending mail
       } else {
         callback()
       }
@@ -274,3 +281,4 @@ const run = (user, callback) => {
 }
 
 module.exports = run
+module.exports.sendMail = sendMail

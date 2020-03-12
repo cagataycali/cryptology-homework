@@ -45,5 +45,6 @@ npm start
 
 **If you don't have a user, when first login attempt you will be registered.**
 
+**random analysis, hash checks, integrity analysis can be tested with `node test.js`**
 
 ![Usage gif](./gif.gif "Usage gif")
