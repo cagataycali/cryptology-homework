@@ -17,6 +17,20 @@ const [userDB, mailDB] = [
 const CURVE_ALGORTHM = 'secp256k1'
 const AES256 = 'aes-256-gcm'
 
+const generateHash = (message) => {
+  const secret = 'cagataycali@!.'
+  return crypto.createHmac('sha256', secret)
+    .update(message)
+    .digest('hex')
+}
+
+const isHashEqual = (message, hash) => {
+  const secret = 'cagataycali@!.'
+  return hash === crypto.createHmac('sha256', secret)
+    .update(message)
+    .digest('hex')
+}
+
 const encryptMessage = (user, to, message) => {
   // This scenario user is alice
   const alice = crypto.createECDH(CURVE_ALGORTHM)
@@ -208,7 +222,8 @@ const run = (user, callback) => {
               to: mail.to,
               from: mail.from,
               message: decryptedMessage,
-              date: moment(mail.date).fromNow() || moment(new Date()).fromNow()
+              date: moment(mail.date).fromNow() || moment(new Date()).fromNow(),
+              isHashValid: isHashEqual(decryptedMessage, mail.hash)
             }
           })
 
@@ -234,11 +249,12 @@ const run = (user, callback) => {
         const mail = await askUser(users)
         sendingMails.start()
         sendingMails.text = 'Encrypting your message...'
+        const hash = generateHash(mail.message)
         const message = encryptMessage(user, users.find(user => user.username === mail.username), mail.message, true)
         sendingMails.text = 'Encrypting successfully...'
         sendingMails.succeed(`Your message is now only read by ${colors.green.underline.bold(mail.username)}.`)
         sendingMails.info('Sending...')
-        mailDB.insert({ from: username, to: mail.username, message, date: new Date() }, (err, doc) => {
+        mailDB.insert({ from: username, to: mail.username, message, date: new Date(), hash }, (err, doc) => {
           if (err) {
             sendingMails.fail('Mail didn\'t sended.')
             sendingMails.stop()
