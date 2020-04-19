@@ -341,7 +341,7 @@ const run = (user, callback) => {
                 name: 'option',
                 message: 'Which email would you like to browse?',
                 choices: [
-                  ...data.map((row, index) => ({ name: `${row.from} - ${row.message.slice(0, 20)}`, value: index })),
+                  ...data.map((row, index) => ({ name: `${row.from} - ${row.message.slice(0, 20)}...`, value: index })),
                   {
                     name: 'Exit',
                     value: 'exit'
