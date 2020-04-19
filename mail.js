@@ -8,6 +8,8 @@ const inquirer = require('inquirer')
 const Datastore = require('nedb')
 const moment = require('moment')
 const crypto = require('crypto')
+const { embedWatermark } = require('./watermark')
+
 const loadingMails = ora('Loading mails\n')
 const sendingMails = ora('Sending your super secret mail\n')
 const [userDB, mailDB] = [
@@ -31,7 +33,47 @@ const isHashEqual = (message, hash) => {
     .digest('hex')
 }
 
+const isNeedWatermark = (message, user) => {
+  const regex = /(.*?\.[\w:]+)/gmi
+  const str = message
+  let m
+  const set = new Set()
+  while ((m = regex.exec(str)) !== null) {
+    // This is necessary to avoid infinite loops with zero-width matches
+    if (m.index === regex.lastIndex) {
+      regex.lastIndex++
+    }
+
+    // The result can be accessed through the `m`-variable.
+    m.forEach((match) => {
+      if (
+        match.includes('.png') ||
+        match.includes('.jpg') ||
+        match.includes('.jpeg')
+      ) {
+        set.add(match.split(' ').pop().trim())
+      }
+    })
+  }
+  Array.from(set).map((media) => {
+    try {
+      embedWatermark(
+        media,
+        {
+          text: user.username,
+          'override-image': true
+        }
+      )
+    } catch (err) {
+      console.log(media, 'does not exists.')
+    }
+  })
+
+  return message
+}
+
 const encryptMessage = (user, to, message) => {
+  message = isNeedWatermark(message, user)
   // This scenario user is alice
   const alice = crypto.createECDH(CURVE_ALGORTHM)
   alice.generateKeys()
@@ -200,8 +242,12 @@ const run = (user, callback) => {
       message: 'How can I help you?',
       choices: [
         {
-          name: 'Show mailbox',
+          name: 'Show all mails',
           value: 'mailbox'
+        },
+        {
+          name: 'Show mail details',
+          value: 'detail'
         },
         {
           name: 'Send mail',
@@ -255,6 +301,55 @@ const run = (user, callback) => {
               console.log('-'.repeat(100).rainbow)
               run(user, callback)
             }, 1000 * 2)
+          })
+        }
+      } else if (option === 'detail') {
+        loadingMails.start()
+        let mails = await showMailBox(username)
+
+        if (mails.length === 0) {
+          loadingMails.fail("There's no mail for now.")
+          loadingMails.stop()
+          return run(user, callback)
+        } else {
+          mails = mails.map(async (mail) => {
+            const message = mail.message
+
+            // Get the sender data.
+            const sender = await getUser(mail.from)
+            const decryptedMessage = decryptMessage(user, sender, message)
+
+            return {
+              to: mail.to,
+              from: mail.from,
+              message: decryptedMessage,
+              date: moment(mail.date).fromNow() || moment(new Date()).fromNow(),
+              isHashValid: isHashEqual(decryptedMessage, mail.hash)
+            }
+          })
+
+          Promise.all(mails).then((data) => {
+            loadingMails.text = 'Mails gathered, will be decrypted...'
+            loadingMails.text = 'Mails decrypted succesfully.\n'
+            loadingMails.stop()
+            console.log(data)
+
+            // DETAIL START
+            inquirer.prompt([
+              {
+                type: 'list',
+                name: 'option',
+                message: 'Which email would you like to browse?',
+                choices: [
+                  ...data.map((row, index) => ({ name: `${row.from} - ${row.message.slice(0, 20)}`, value: index })),
+                  {
+                    name: 'Exit',
+                    value: 'exit'
+                  }
+                ]
+              }
+            ])
+            // DETAIL END
           })
         }
       } else if (option === 'send') {
