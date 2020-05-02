@@ -41,6 +41,7 @@ npm start
 * username : password
 * cagatay : s3cur3P@ss
 * test : s3cur3P@ss2
+* badguy : s3cur3P@ss2 # the guy with many incorrect login attempts (banned)
 
 
 **If you don't have a user, when first login attempt you will be registered.**
