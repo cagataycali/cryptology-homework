@@ -6,8 +6,8 @@
 
 * Authenticating ( pbkdf2 & sha512 )
 * E2E encrypted messaging between users ( ECDH-AES-256-GCM )
-* Watermark images inside of text.
-* Challenge login ( Steps described in here https://github.com/cagataycali/cryptology-homework/pull/2#issue-412515435 )
+* Watermark images inside of text
+* Challenge login ( Steps described in here #issue-412515435 )
 
 **Installation**
 
