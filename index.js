@@ -5,7 +5,7 @@ function start () {
   auth(({ status, user, message }) => {
     const mail = require('./mail')
     if (status) {
-      console.log('Log-in successfully.'.underline)
+      console.log(message.underline)
       console.log('Welcome', colors.green.bold(user.username))
 
       mail(user, () => {
