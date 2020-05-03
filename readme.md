@@ -40,9 +40,10 @@ npm start
 > Test users:
 
 * username : password
-* cagatay : s3cur3P@ss
-* test : s3cur3P@ss2
-* badguy : s3cur3P@ss2 # the guy with many incorrect login attempts (banned)
+* cagatay : s3cur3P@ss # Favorite pet name is "boncuk".
+* test : s3cur3P@ss2 # Favorite color is "red".
+* naive : s3cur3P@ss2 # Grandma name "eve".
+* badguy : s3cur3P@ss2 # Mother's hometown is "İstanbul" (Starts with upper)
 
 
 **If you don't have a user, when first login attempt you will be registered.**

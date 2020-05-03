@@ -8,8 +8,9 @@ const inquirer = require('inquirer')
 const Datastore = require('nedb')
 const moment = require('moment')
 const crypto = require('crypto')
+const { execSync } = require('child_process')
 const { embedWatermark } = require('./watermark')
-
+const secret = require('./secret.json')
 const loadingMails = ora('Loading mails\n')
 const sendingMails = ora('Sending your super secret mail\n')
 const [userDB, mailDB] = [
@@ -20,21 +21,17 @@ const CURVE_ALGORTHM = 'secp256k1'
 const AES256 = 'aes-256-gcm'
 
 const generateHash = (message) => {
-  const secret = 'cagataycali@!.'
-  return crypto.createHmac('sha256', secret)
-    .update(message)
-    .digest('hex')
+  return crypto.createHmac('sha256', secret.secret).update(message).digest('hex')
 }
 
 const isHashEqual = (message, hash) => {
-  const secret = 'cagataycali@!.'
-  return hash === crypto.createHmac('sha256', secret)
-    .update(message)
-    .digest('hex')
+  return (
+    hash === crypto.createHmac('sha256', secret.secret).update(message).digest('hex')
+  )
 }
 
-const isNeedWatermark = (message, user) => {
-  const regex = /(.*?\.[\w:]+)/gmi
+const showImage = (message) => {
+  const regex = /(.*?\.[\w:]+)/gim
   const str = message
   let m
   const set = new Set()
@@ -57,13 +54,41 @@ const isNeedWatermark = (message, user) => {
   }
   Array.from(set).map((media) => {
     try {
-      embedWatermark(
-        media,
-        {
-          text: user.username,
-          'override-image': true
-        }
-      )
+      execSync(`open ${media}`)
+    } catch (err) {
+      console.log(media, 'does not exists.')
+    }
+  })
+}
+
+const isNeedWatermark = (message, user) => {
+  const regex = /(.*?\.[\w:]+)/gim
+  const str = message
+  let m
+  const set = new Set()
+  while ((m = regex.exec(str)) !== null) {
+    // This is necessary to avoid infinite loops with zero-width matches
+    if (m.index === regex.lastIndex) {
+      regex.lastIndex++
+    }
+
+    // The result can be accessed through the `m`-variable.
+    m.forEach((match) => {
+      if (
+        match.includes('.png') ||
+        match.includes('.jpg') ||
+        match.includes('.jpeg')
+      ) {
+        set.add(match.split(' ').pop().trim())
+      }
+    })
+  }
+  Array.from(set).map((media) => {
+    try {
+      embedWatermark(media, {
+        text: user.username,
+        'override-image': true
+      })
     } catch (err) {
       console.log(media, 'does not exists.')
     }
@@ -84,9 +109,11 @@ const encryptMessage = (user, to, message) => {
   bob.generateKeys()
   bob.setPrivateKey(Buffer.from(to.private, 'base64'))
 
+  // Calculate secret
   const aliceSharedKey = alice.computeSecret(to.public, 'base64', 'hex')
   const bobSharedKey = bob.computeSecret(user.public, 'base64', 'hex')
 
+  // Check both key equal. c^ab === c^ba
   if (aliceSharedKey !== bobSharedKey) {
     console.log('you are caught red handed :)'.red.bold)
     process.exit()
@@ -152,7 +179,7 @@ const decryptMessage = (user, to, payload) => {
   }
 }
 
-const getUser = username => {
+const getUser = (username) => {
   return new Promise((resolve, reject) => {
     userDB.find({ username }, (err, users) => {
       if (err) {
@@ -163,7 +190,7 @@ const getUser = username => {
   })
 }
 
-const showMailBox = username => {
+const showMailBox = (username) => {
   return new Promise((resolve, reject) => {
     // Find which mails send **to** me?
     mailDB.find({ to: username }, (err, mails) => {
@@ -175,14 +202,14 @@ const showMailBox = username => {
   })
 }
 
-const getOtherUsers = username => {
+const getOtherUsers = (username) => {
   return new Promise((resolve, reject) => {
     userDB.find({}, (err, users) => {
       if (err) {
         reject(err)
       }
       // Don't send yourself.
-      users = users.filter(_user => _user.username !== username)
+      users = users.filter((_user) => _user.username !== username)
       resolve(users)
     })
   })
@@ -192,29 +219,47 @@ const sendMail = (user, users, mail, cb) => {
   sendingMails.start()
   sendingMails.text = 'Encrypting your message...'
   const hash = generateHash(mail.message)
-  const message = encryptMessage(user, users.find(_user => _user.username === mail.username), mail.message, true)
+  const message = encryptMessage(
+    user,
+    users.find((_user) => _user.username === mail.username),
+    mail.message,
+    true
+  )
   sendingMails.text = 'Encrypting successfully...'
-  sendingMails.succeed(`Your message is now only read by ${colors.green.underline.bold(mail.username)}.`)
+  sendingMails.succeed(
+    `Your message is now only read by ${colors.green.underline.bold(
+      mail.username
+    )}.`
+  )
   sendingMails.info('Sending...')
-  mailDB.insert({ from: user.username, to: mail.username, message, date: new Date(), hash }, (err, doc) => {
-    if (err) {
-      sendingMails.fail('Mail didn\'t sended.')
-      sendingMails.stop()
-    } else {
-      cb({ from: user.username, to: mail.username, message, date: new Date(), hash })
+  mailDB.insert(
+    { from: user.username, to: mail.username, message, date: new Date(), hash },
+    (err, doc) => {
+      if (err) {
+        sendingMails.fail("Mail didn't sended.")
+        sendingMails.stop()
+      } else {
+        cb({
+          from: user.username,
+          to: mail.username,
+          message,
+          date: new Date(),
+          hash
+        })
+      }
     }
-  })
+  )
 }
 
-const askUser = users => {
-  return new Promise(resolve => {
+const askUser = (users) => {
+  return new Promise((resolve) => {
     inquirer
       .prompt([
         {
           type: 'list',
           name: 'username',
           message: 'Who do you want to send mail to?',
-          choices: users.map(user => user.username)
+          choices: users.map((user) => user.username)
         },
         {
           type: 'input',
@@ -258,90 +303,91 @@ const run = (user, callback) => {
           name: 'Exit',
           value: 'exit'
         }
-
       ]
     }
   ]
 
-  inquirer
-    .prompt(questions)
-    .then(async ({ option }) => {
-      if (option === 'mailbox') {
-        loadingMails.start()
-        let mails = await showMailBox(username)
+  inquirer.prompt(questions).then(async ({ option }) => {
+    if (option === 'mailbox') {
+      loadingMails.start()
+      let mails = await showMailBox(username)
 
-        if (mails.length === 0) {
-          loadingMails.fail('There\'s no mail for now.')
-          loadingMails.stop()
-          return run(user, callback)
-        } else {
-          mails = mails.map(async mail => {
-            const message = mail.message
+      if (mails.length === 0) {
+        loadingMails.fail("There's no mail for now.")
+        loadingMails.stop()
+        return run(user, callback)
+      } else {
+        mails = mails.map(async (mail) => {
+          const message = mail.message
 
-            // Get the sender data.
-            const sender = await getUser(mail.from)
-            const decryptedMessage = decryptMessage(user, sender, message)
+          // Get the sender data.
+          const sender = await getUser(mail.from)
+          const decryptedMessage = decryptMessage(user, sender, message)
 
-            return {
-              to: mail.to,
-              from: mail.from,
-              message: decryptedMessage,
-              date: moment(mail.date).fromNow() || moment(new Date()).fromNow(),
-              isHashValid: isHashEqual(decryptedMessage, mail.hash)
-            }
-          })
+          return {
+            to: mail.to,
+            from: mail.from,
+            message: decryptedMessage,
+            date: moment(mail.date).fromNow() || moment(new Date()).fromNow(),
+            isHashValid: isHashEqual(decryptedMessage, mail.hash)
+          }
+        })
 
-          Promise.all(mails).then((data) => {
-            loadingMails.text = 'Mails gathered, will be decrypted...'
-            setTimeout(() => {
-              loadingMails.text = 'Mails decrypted succesfully.\n'
-              loadingMails.stop()
-              console.log('-'.repeat(100).rainbow)
-              console.table(data)
-              console.log('-'.repeat(100).rainbow)
-              run(user, callback)
-            }, 1000 * 2)
-          })
-        }
-      } else if (option === 'detail') {
-        loadingMails.start()
-        let mails = await showMailBox(username)
-
-        if (mails.length === 0) {
-          loadingMails.fail("There's no mail for now.")
-          loadingMails.stop()
-          return run(user, callback)
-        } else {
-          mails = mails.map(async (mail) => {
-            const message = mail.message
-
-            // Get the sender data.
-            const sender = await getUser(mail.from)
-            const decryptedMessage = decryptMessage(user, sender, message)
-
-            return {
-              to: mail.to,
-              from: mail.from,
-              message: decryptedMessage,
-              date: moment(mail.date).fromNow() || moment(new Date()).fromNow(),
-              isHashValid: isHashEqual(decryptedMessage, mail.hash)
-            }
-          })
-
-          Promise.all(mails).then((data) => {
-            loadingMails.text = 'Mails gathered, will be decrypted...'
+        Promise.all(mails).then((data) => {
+          loadingMails.text = 'Mails gathered, will be decrypted...'
+          setTimeout(() => {
             loadingMails.text = 'Mails decrypted succesfully.\n'
             loadingMails.stop()
-            console.log(data)
+            console.log('-'.repeat(100).rainbow)
+            console.table(data)
+            console.log('-'.repeat(100).rainbow)
+            run(user, callback)
+          }, 1000 * 2)
+        })
+      }
+    } else if (option === 'detail') {
+      loadingMails.start()
+      let mails = await showMailBox(username)
 
-            // DETAIL START
-            inquirer.prompt([
+      if (mails.length === 0) {
+        loadingMails.fail("There's no mail for now.")
+        loadingMails.stop()
+        return run(user, callback)
+      } else {
+        mails = mails.map(async (mail) => {
+          const message = mail.message
+
+          // Get the sender data.
+          const sender = await getUser(mail.from)
+          const decryptedMessage = decryptMessage(user, sender, message)
+
+          return {
+            to: mail.to,
+            from: mail.from,
+            message: decryptedMessage,
+            date: moment(mail.date).fromNow() || moment(new Date()).fromNow(),
+            isHashValid: isHashEqual(decryptedMessage, mail.hash)
+          }
+        })
+
+        Promise.all(mails).then((data) => {
+          loadingMails.text = 'Mails gathered, will be decrypted...'
+          loadingMails.text = 'Mails decrypted succesfully.\n'
+          loadingMails.stop()
+          // console.log(data)
+
+          // DETAIL START
+          inquirer
+            .prompt([
               {
                 type: 'list',
                 name: 'option',
                 message: 'Which email would you like to browse?',
                 choices: [
-                  ...data.map((row, index) => ({ name: `${row.from} - ${row.message.slice(0, 20)}...`, value: index })),
+                  ...data.map((row, index) => ({
+                    name: `${row.from} - ${row.message.slice(0, 20)}...`,
+                    value: index
+                  })),
                   {
                     name: 'Exit',
                     value: 'exit'
@@ -349,30 +395,37 @@ const run = (user, callback) => {
                 ]
               }
             ])
-            // DETAIL END
-          })
-        }
-      } else if (option === 'send') {
-        const users = await getOtherUsers(username)
-
-        if (!users || users.length === 0) {
-          console.log('There\'s no other users'.red)
-          return run(user, callback)
-        }
-        const mail = await askUser(users)
-        // Start sending mail
-        sendMail(user, users, mail, () => {
-          setTimeout(() => {
-            sendingMails.succeed(`Mail sent to ${colors.green.underline.bold(mail.username)}.`)
-            sendingMails.stop()
-            run(user, callback)
-          }, 1000 * 2)
+            .then(({ option }) => {
+              const mail = data[option]
+              console.table(mail)
+              showImage(mail.message)
+            })
+          // DETAIL END
         })
-        // End sending mail
-      } else {
-        callback()
       }
-    })
+    } else if (option === 'send') {
+      const users = await getOtherUsers(username)
+
+      if (!users || users.length === 0) {
+        console.log("There's no other users".red)
+        return run(user, callback)
+      }
+      const mail = await askUser(users)
+      // Start sending mail
+      sendMail(user, users, mail, () => {
+        setTimeout(() => {
+          sendingMails.succeed(
+            `Mail sent to ${colors.green.underline.bold(mail.username)}.`
+          )
+          sendingMails.stop()
+          run(user, callback)
+        }, 1000 * 2)
+      })
+      // End sending mail
+    } else {
+      callback()
+    }
+  })
 }
 
 module.exports = run

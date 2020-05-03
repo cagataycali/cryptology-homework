@@ -80,6 +80,7 @@ module.exports = (callback) => {
         // Elliptic curve diffie-hellman.
         const ecdh = createECDH(CURVE_ALGORTHM);
         const key = ecdh.generateKeys();
+        // Generate keypairs when registering.
         const public = ecdh.getPublicKey().toString("base64");
         const private = ecdh.getPrivateKey().toString("base64");
         const { question, answer } = await challenge();
